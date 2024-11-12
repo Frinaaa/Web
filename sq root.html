@@ -1,0 +1,21 @@
+<html>
+  <head>
+     <title>square root</title>
+  </head>
+  <body>
+    <h2>square root of a number</h2>
+    
+<label for n >enter any number:</label>
+<input type="number" id="n" min="1" required><br><br>
+<button onclick="squareroot()">calculate square root</button>
+<p id="result"></p>
+<script>
+  function squareroot()
+  {
+    var n=parseInt(document.getElementById("n").value);
+    var root=n**0.5;
+     document.getElementById("result").textContent="square root:"+root;
+   }
+</script>
+</body>
+</html>
